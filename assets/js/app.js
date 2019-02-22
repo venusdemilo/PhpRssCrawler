@@ -11,11 +11,10 @@ require('../css/global.scss');
 
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
- var $ = require('jquery');
+import $ from 'jquery';
 //global.$ = global.jQuery = $
-console.log('Hello coco Webpack Encore! Edit me in assets/js/app.js');
-var greet = require('./greet');
-
+//var greet = require('./greet');
+//import test from ('./test');
 // or you can include specific pieces
 // require('bootstrap/js/dist/tooltip');
 // require('bootstrap/js/dist/popover');
@@ -24,6 +23,3 @@ $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
 */
-$(document).ready(function() {
-    $('body').prepend('<h1>'+greet('jill')+'</h1>');
-});
