@@ -6,15 +6,15 @@
  */
 
 // any CSS you require will output into a single css file (app.css in this case)
-require('../css/app.css');
-require ('bootstrap');
+require('../css/global.scss');
+//require ('bootstrap');
 
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
- const $ = require('jquery');
-
+ var $ = require('jquery');
+//global.$ = global.jQuery = $
 console.log('Hello coco Webpack Encore! Edit me in assets/js/app.js');
-
+var greet = require('./greet');
 
 // or you can include specific pieces
 // require('bootstrap/js/dist/tooltip');
@@ -25,5 +25,5 @@ $(document).ready(function() {
 });
 */
 $(document).ready(function() {
-    $('#cible').append('coco');
+    $('body').prepend('<h1>'+greet('jill')+'</h1>');
 });

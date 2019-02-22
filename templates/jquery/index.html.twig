@@ -3,15 +3,13 @@
 {% block title %}Hello JqueryController!{% endblock %}
 
 {% block body %}
-<span id="cible"></span>
+<span id="cible" class="badge badge-secondary"></span>
 {% endblock %}
 
 
 {% block javascripts %}
-{{ encore_entry_script_tags('app') }}
-<script>
-$(document).ready(function() {
-    $('#cible').append('coco');
-});
-</script>
+{{ parent() }}
+
+
+
 {% endblock %}
