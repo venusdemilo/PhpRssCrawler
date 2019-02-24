@@ -10,36 +10,36 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class SimpleRssReaderController extends AbstractController
 {
     /**
-     * @Route("/simple/rss/reader", name="simple_rss_reader")
+     * @Route("/simple/rss/reader/{urlid}", name="simple_rss_reader")
      */
-    public function index()
+    public function index($urlid)
     {
-      $urlFeed = 'https://www.lemonde.fr/rss/une.xml';
+      sleep(2);
+      $urlFeed = urldecode($urlid);
       $feed = new SimplePie();
-      $feed->set_cache_location('/home/philippe/SimplePieCache');
+      $feed->set_cache_location('/Users/philippe/simplepie');
       $feed->set_feed_url($urlFeed);
       $feed->init();
       $feed->handle_content_type();
       if ($feed->error())
       {
-        echo 'error !';
+        $arr[] = ['error' => true];
       }
       foreach ($feed->get_items() as $item)
       {
-        $arr[] = $item->get_title();
+        $arr[] = ['title' => $item->get_title(),'link'=>$item->get_link()];
 
       }
-      $arr = json_encode($arr,JSON_FORCE_OBJECT);
-      var_dump($arr);
+      //$arr = json_encode($arr,JSON_FORCE_OBJECT);
+    //  print_r($arr);
+    //  echo "----------------------------------------------------------";
         /*
         return $this->render('simple_rss_reader/index.html.twig', [
             'controller_name' => 'SimpleRssReaderController',
         ]);
         */
 
-        $response = new JsonResponse();
-
-    $response->setData($arr);
- return $response;
+        $response = new JsonResponse(['data' => $arr]);
+        return $response;
     }
 }

@@ -8,7 +8,26 @@
       {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    {%block header %}
+    <div class="container">
+      <nav>
+         <div class="nav-wrapper teal darken-4">
+           <a href="#" class="brand-logo">Logo</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="sass.html">Sass</a></li>
+             <li><a href="badges.html">Components</a></li>
+             <li><a href="collapsible.html">JavaScript</a></li>
+           </ul>
+         </div>
+       </nav>
+    </div>
+    {% endblock %}
+    {% block main %}
+
+{% endblock %}
+{%block footer %}
+
+{% endblock %}
 
         {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
