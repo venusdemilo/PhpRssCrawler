@@ -6,7 +6,7 @@
  */
 
 // any CSS you require will output into a single css file (app.css in this case)
-//require('../css/global.scss');
+require('../css/global.scss');
 //require ('bootstrap');
 require('materialize/css/materialize.min.css');
 require('materialize/js/materialize.min');

@@ -7,35 +7,32 @@
 {% block title %}Hello JqueryController!{% endblock %}
 
 
-{% block main %}
+{% block body %}
 
 
-<div class="container">
+
 <div class="row">
-  <div class="col s8">
-
-
-<div class="card teal darken-1">
-  <div class="card-content white-text">
-    <span class="card-title" id="cardTitle">RSS Load</span>
-    <div id="preloader"></div>
-    <p id = "cible"></p>
+    <div class="col s8">
+      <div class="card teal hoverable">
+        <div class="card-content white-text">
+          <span class="card-title" id="cardTitle">RSS Load</span>
+          <div id="preloader"></div>
+          <p id = "cible"></p>
+        </div>
+      </div>
   </div>
-</div>
-
-</div>
 
   <div class="col s4">
-<div class="card">
-<button  type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "https://www.la-croix.com/RSS/UNIVERS"|url_encode })}}">La croix</button>
-<button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "http://www.lefigaro.fr/rss/figaro_actualites.xml"|url_encode })}}">Le figaro</button>
-<button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "https://www.lemonde.fr/rss/une.xml"|url_encode })}}">Le monde</button>
-<button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "http://www.nouvelobs.com/rss.xml"|url_encode })}}">Nouvel'Obs</button>
+        <div class="card hoverable">
+        <button  type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "https://www.la-croix.com/RSS/UNIVERS"|url_encode })}}">La croix</button>
+        <button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': " "|url_encode })}}">Le figaro</button>
+        <button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "https://www.lemonde.fr/rss/une.xml"|url_encode })}}">Le monde</button>
+        <button type="button" class="waves-effect waves-light btn" style="width:100%" url="{{ path('simple_rss_reader',{'urlid': "http://www.nouvelobs.com/rss.xml"|url_encode })}}">Nouvel'Obs</button>
+        </div>
+</div>
+</div>
+<a class="btn-floating pulse orange"><i class="material-icons">home</i></a>
 
-</div>
-</div>
-</div>
-</div>
 
 
 

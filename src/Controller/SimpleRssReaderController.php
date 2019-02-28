@@ -12,7 +12,7 @@ class SimpleRssReaderController extends AbstractController
     /**
      * @Route("/simple/rss/reader/{urlid}", name="simple_rss_reader")
      */
-    public function index($urlid)
+    public function index($urlId)
     {
       sleep(2);
       $urlFeed = urldecode($urlid);
