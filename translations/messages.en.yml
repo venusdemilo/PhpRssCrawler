@@ -1,0 +1,5 @@
+Mot de passe oublié ?: Forgotten password ?
+form:
+  login:
+    title: Please sign in
+    button: SIGN IN
