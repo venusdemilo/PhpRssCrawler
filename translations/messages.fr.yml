@@ -1,0 +1,14 @@
+form:
+  login:
+    title: Enregistrez-vous
+    button: ENREGISTRER
+    forgot: Mot de passe oublié ?
+    password: Mot de passe
+nav:
+  bar:
+    lang: Langue
+    fr: Français
+    en: English
+    createaccount: Créer un compte
+    connexion: Connexion
+    deconnexion: Déconnéxion
