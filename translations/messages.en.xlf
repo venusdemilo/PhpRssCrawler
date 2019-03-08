@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="twwNejU" resname="form.login.title">
+        <source>form.login.title</source>
+        <target>Please sign in</target>
+      </trans-unit>
+      <trans-unit id="E1ojY9K" resname="form.login.button">
+        <source>form.login.button</source>
+        <target>SIGN IN</target>
+      </trans-unit>
+      <trans-unit id="wW8NnwL" resname="form.login.forgot">
+        <source>form.login.forgot</source>
+        <target>Forgotten password ?</target>
+      </trans-unit>
+      <trans-unit id="U5gH4T4" resname="form.login.password">
+        <source>form.login.password</source>
+        <target>__form.login.password</target>
+      </trans-unit>
+      <trans-unit id="HjyHDbq" resname="nav.bar.lang">
+        <source>nav.bar.lang</source>
+        <target>Language</target>
+      </trans-unit>
+      <trans-unit id="7xxr9Ga" resname="nav.bar.fr">
+        <source>nav.bar.fr</source>
+        <target>Français</target>
+      </trans-unit>
+      <trans-unit id="qyabUxb" resname="nav.bar.en">
+        <source>nav.bar.en</source>
+        <target>English</target>
+      </trans-unit>
+      <trans-unit id="X0bxGcD" resname="nav.bar.createaccount">
+        <source>nav.bar.createaccount</source>
+        <target>Create an account</target>
+      </trans-unit>
+      <trans-unit id="0krmB7L" resname="nav.bar.connexion">
+        <source>nav.bar.connexion</source>
+        <target>Connect</target>
+      </trans-unit>
+      <trans-unit id="loUyTOd" resname="nav.bar.deconnexion">
+        <source>nav.bar.deconnexion</source>
+        <target>Disconnect</target>
+      </trans-unit>
+      <trans-unit id="FDLCdfj" resname="nav.user.show">
+        <source>nav.user.show</source>
+        <target>show</target>
+      </trans-unit>
+      <trans-unit id="b5iOYbD" resname="nav.user.edit">
+        <source>nav.user.edit</source>
+        <target>edit</target>
+      </trans-unit>
+      <trans-unit id="siJbM4W" resname="nav.user.create">
+        <source>nav.user.create</source>
+        <target>Create new</target>
+      </trans-unit>
+      <trans-unit id="6QfyEv_" resname="user_index.title">
+        <source>user_index.title</source>
+        <target>Users index</target>
+      </trans-unit>
+      <trans-unit id="K5_sIkf" resname="user_index.firstname">
+        <source>user_index.firstname</source>
+        <target>Firstname</target>
+      </trans-unit>
+      <trans-unit id="V68Uj8_" resname="user_index.lastname">
+        <source>user_index.lastname</source>
+        <target>Lastname</target>
+      </trans-unit>
+      <trans-unit id="nLgMAZn" resname="user_index.emptymessage">
+        <source>user_index.emptymessage</source>
+        <target>__user_index.emptymessage</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
